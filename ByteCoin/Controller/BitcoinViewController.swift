@@ -47,7 +47,7 @@ extension BitcoinViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     }
 }
 
-//MARK: - UIPickerViewDataSource & UIPickerViewDelegate
+//MARK: - CoinManagerDelegate
 extension BitcoinViewController: CoinManagerDelegate {
     func didUpdatePrice(_ coinManager: CoinManager, coin: CoinModel) {
         DispatchQueue.main.async {
